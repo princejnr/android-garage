@@ -68,7 +68,10 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 ```
-9. Click "Run" to run the application on either a connected device (over USB) or an emulator (create an AVD and select it from the list in the pop-up dialog that appears here). _Note that using a real device is faster for debug/launch. However if you are using AVD, make sure you follow [instructions](https://docs.google.com/document/d/1APFAHFQTXJTrp4h-9qiiB74SuGQa1W0cD5mPnM0pG-4/pub) for configuring these correctly.
+
+Click "Run" to run the application on either a connected device (over USB) or an emulator (create an AVD and select it from the list in the pop-up dialog that appears here). 
+
+_Note that using a real device is faster for debug/launch_. However if you are using AVD, make sure you follow [instructions](https://docs.google.com/document/d/1APFAHFQTXJTrp4h-9qiiB74SuGQa1W0cD5mPnM0pG-4/pub) for configuring these correctly.
 
 ### Update project icon
 
@@ -79,6 +82,27 @@ Now replace the default application icon for the project with the recommended [s
 3. Now wait for Gradle to rebuild (you may need to click on 'Sync now' if that dialog occurs), then run the application again (Run->Run 'app'). 
 
 The emulator/device should re-install the application and display it on the home screen with the new icon.
+
+### Android Software Stack 
+
+Here is an (old) popular image for the Android Architecture stack. While the contents of any particular layer may have changed, the basic layers remain the same.
+![System Architecture](http://developer.android.com/images/system-architecture.jpg)
+
+1. At the core is the _Linux Kernel_ which contains hardware device drivers, oversees memory and process management, and enforces [the security architecture](http://developer.android.com/guide/topics/security/permissions.html) for Android.
+
+2. At the next level up are _Native Libraries_ (in C/C++), many developed by third parties and contributed to Android including WebKit (browser), OpenGL (graphics) and SQLlite (database).
+
+3. Above this is the _Android Runtime_ (Dalvik VM + Core Java libraries) which effectively provides a sandbox or container within which each independent Android application is run.
+
+4. Above this is the _Application Framework_ layer which abstracts core Android-specific functionality into a reusable set of components, tackling things like lifecycle management, telephony, resource management and location management.
+
+5. Above this is the actual _Applications_ layer, the part of the stack where a developer-created application would reside. A default set of applications is typically provided (e.g., browser, contacts etc.) that provide key mobile services such as web browsing and address book management. However, these applications can be replaced (and often are, by carriers) by 3rd-party developed equivalents. However, all layers below this are typically out-of-bounds for users and developers.
+
+### Gradle
+
+[Gradle](http://www.gradle.org) is a build automation system that combines 'the flexibility of Ant with the dependency management and conventions of Maven'. The Android Studio build system has a plugin for Gradle - essentially allowing the Android project to be built either from command line (_gradlew_) or from the Android Studio IDE (Build->Make Project).
+
+Read: [Building Your Project With Gradle](http://developer.android.com/sdk/installing/studio-build.html)
 
 
 L1: Connect Sunshine to the Cloud
