@@ -7,30 +7,38 @@ This is a step-by-step (tagged) check-in of the "Sunshine" application developed
 This is the first project that we are tackling in the group, for self-study. We will use this document to provide links and summarize lessons related to the development. The planned learning schedule can be found [here](https://github.com/gdg-hudson-valley/android-garage/blob/master/MeetingPlan.md).
 
 
+L1: Create Project Sunshine
+---------------------------
 
-Lesson 1
---------
-
-
-Lesson 2
---------
+ 1. Course structured around building a weather app called "Sunshine"
+ 2. 
 
 
-Lesson 3
---------
 
 
-Lesson 4a
----------
+L1: Connect Sunshine to the Cloud
+---------------------------------
 
 
-Lesson 4b
----------
+L3: New Activities and Intents
+------------------------------
 
 
-Lesson 5
---------
+L4a: Lifecycle and Databases
+----------------------------
 
 
-Lesson 6
---------
+L4b: Content Providers and Loaders
+-----------------------------------
+
+
+L5: Rich and Responsive Layouts
+-------------------------------
+
+
+L6: Services and Notifications
+------------------------------
+
+
+Final Project: Individual
+-------------------------
