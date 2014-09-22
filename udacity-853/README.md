@@ -72,6 +72,14 @@ dependencies {
 
 ### Update project icon
 
+Now replace the default application icon for the project with the recommended [sunshine](https://s3.amazonaws.com/content.udacity-data.com/course/ud853/ic_launcher.png) icon. 
+
+1. Download the icon from the link above, save to local folder.
+2. In Android Studio, right-click on app and select New->ImageAsset; in the dialog, browse to the icon in step 1, select and confirm.
+3. Now wait for Gradle to rebuild (you may need to click on 'Sync now' if that dialog occurs), then run the application again (Run->Run 'app'). 
+
+The emulator/device should re-install the application and display it on the home screen with the new icon.
+
 
 L1: Connect Sunshine to the Cloud
 ---------------------------------
