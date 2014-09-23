@@ -104,6 +104,10 @@ Here is an (old) popular image for the Android Architecture stack. While the con
 
 Read: [Building Your Project With Gradle](http://developer.android.com/sdk/installing/studio-build.html)
 
+### Create a User Interface
+
+Explore different UI view elements and their attributes/behavior in the [Android Developer Documentation](http://developer.android.com/reference/android/view/package-summary.html).
+
 
 L1: Connect Sunshine to the Cloud
 ---------------------------------
