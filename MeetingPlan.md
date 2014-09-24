@@ -29,9 +29,9 @@ We can speed up the progress based on comfort level.
 
   > **Sept 10**: Kick off meeting. Setup Android Studio. Build First App to verify setup.
   
-  > **Sept 23**: Sign up for [Udacity course](https://www.udacity.com/course/ud853). Complete Lesson 1 and Lesson 2.
+  > **Sept 23**: Sign up for [Udacity course](https://www.udacity.com/course/ud853). Complete Lesson 1.
   
-  > **Oct 8**: Complete [Udacity course](https://www.udacity.com/course/ud853) Lesson 3. 
+  > **Oct 8**: Complete [Udacity course](https://www.udacity.com/course/ud853) Complete Lesson 2 and Lesson 3. 
   
   > **Oct 22**: Complete [Udacity course](https://www.udacity.com/course/ud853) Lesson 4a and Lesson 4b.
   
