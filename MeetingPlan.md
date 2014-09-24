@@ -27,17 +27,27 @@ After completing the Udacity course, everyone should be in a position to start d
 A tentative schedule for beginners where the date indicates what needs to be done BY THAT DATE. 
 We can speed up the progress based on comfort level.
 
-  > **Sept 10**: Kick off meeting. Setup Android Studio. Build First App to verify setup.
+  > **Sep 10**: Kick off meeting. Setup Android Studio. Build First App to verify setup.
   
-  > **Sept 23**: Sign up for [Udacity course](https://www.udacity.com/course/ud853). Complete Lesson 1.
+  > **Sep 23**: Complete Lesson 1 [Udacity course](https://www.udacity.com/course/ud853) -- Meetup date.
   
-  > **Oct 8**: Complete [Udacity course](https://www.udacity.com/course/ud853) Complete Lesson 2 and Lesson 3. 
+  > **Oct 01**: Complete Lesson 2 [Udacity course](https://www.udacity.com/course/ud853) 
   
-  > **Oct 22**: Complete [Udacity course](https://www.udacity.com/course/ud853) Lesson 4a and Lesson 4b.
+  > **Oct 08**: Complete Lesson 3 [Udacity course](https://www.udacity.com/course/ud853) -- Meetup date.
   
-  > **Nov 5**: Complete [Udacity course](https://www.udacity.com/course/ud853) Lesson 5 and Lesson 6. Talk Project
+  > **Oct 08**: Complete Lesson 3 [Udacity course](https://www.udacity.com/course/ud853) 
   
-  > **Nov 19**: Discuss Project Progress. Identify Deep Dive Topics for next session.
+  > **Oct 22**: Complete Lesson 4a [Udacity course](https://www.udacity.com/course/ud853) -- Meetup date. 
+  
+  > **Oct 29**: Complete Lesson 4b [Udacity course](https://www.udacity.com/course/ud853) 
+  
+  > **Nov 05**: Complete Lesson 5 [Udacity course](https://www.udacity.com/course/ud853) -- Meetup date. 
+  
+  > **Nov 12**: Complete Lesson 6 [Udacity course](https://www.udacity.com/course/ud853). Think of projects.. 
+  
+  > **Nov 19**: Discuss Project Progress. Identify Deep Dive Topics for next session. -- Meetup date.
+  
+  
   
 If you choose to sign up for the Coursera Course, their [tentative schedule looks like this](https://class.coursera.org/android-001/wiki/syllabus) so keep that in mind if you decide to take that on.
 
