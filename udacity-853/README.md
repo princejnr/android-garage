@@ -146,6 +146,7 @@ Challenge is to be resource-aware -- what is the minimum number of items you sho
 Given a list of data and instructions to build the View for each list item, the Adapter is then responsible for dynamically creating and rendering the right number of list items onscreen to optimize for both resource usage and user experience.AdapterView can be used with ListView, GridView etc.
 
 [Commit 1.29] Initialize Adapter
+[Commit 1.30] Bind Adapter to the ListView
 
 
 L1: Connect Sunshine to the Cloud

@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -82,6 +83,12 @@ public class MainActivity extends Activity {
                     R.id.list_item_forecast_textview,// identify list item view = item
                     thisWeeksForecast               // identify data to fill in
             );
+
+            // Commit 1.30: Bind ArrayAdapter to ListView
+            // Note how findViewById returns a generic View object that must then be
+            //  cast manually to the targeted View subclass of interest.
+            ListView forecastListView = (ListView) rootView.findViewById(R.id.listview_forecast);
+            forecastListView.setAdapter(forecastAdapter);
 
             return rootView;
         }
