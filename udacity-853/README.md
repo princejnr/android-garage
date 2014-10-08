@@ -179,6 +179,37 @@ Note that using an appropriate "TAG" (see [Log API](http://developer.android.com
 
 [Commit 2.1] Logs & Http
 
+[Commit 2.2] Http Snippet added (will cause NetworkOnMainThread exception)
+
+[Commit 2.3] Threads - move Http code to AsyncTask, refactor Fragment
+
+1. Avoid doing long operations on the main (or UI) thread
+Use the AsyncTask class to simplify background threads creation and ui thread synchronization.
+
+2. Worker Threads. Can be created using new Thread (and new Runnable) to launch and manage the thread process manually. Or, you can subclass [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) and leverage it for less complex usage.
+
+3. AsyncTask. Has 4 key methods as shown below, of which only _doInBackground()_ is mandatory, and is where you define the functionality that you need to execute in the background.
+```
+    // before main action, runs on UI thread 
+    void onPreExecute(Result result)
+
+    // is the main action, runs on background thread
+    Result doInBackground(Params... params)
+
+    // invoked by main action, schedules onProgressUpdate on UI thread
+    final void publishProgress(Progress... values)
+
+    // called by publishProgress, runs on UI thread
+    void onProgressUpdate(Progress... values)
+
+    // after main action, runs on UI thread
+    void onPostExecute(Result result)
+
+```
+
+[Commit 2.4] 
+
+
 L3: New Activities and Intents
 ------------------------------
 
