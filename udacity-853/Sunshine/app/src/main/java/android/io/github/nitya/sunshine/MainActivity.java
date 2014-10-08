@@ -1,7 +1,6 @@
 package android.io.github.nitya.sunshine;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class MainActivity extends Activity {
@@ -58,6 +59,21 @@ public class MainActivity extends Activity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            // Commit 1.28 The root view has been created. Now provide some fake data to fill it
+            String[] forecastArray = {
+                "Today - Rainy - 66/44",
+                "Tomorrow - Sunny - 66/44",
+                "Thursday - Sunny - 66/44",
+                "Friday - Rainy - 66/44",
+                "Saturday - Foggy - 66/44",
+                "Sunday - Cloudy - 66/44",
+                "Monday - Rainy - 66/44"
+            };
+            // Commit 1.28 And return it as an array list
+            List<String> thisWeeksForecast =
+                    new ArrayList<String>( Arrays.asList(forecastArray) );
+
             return rootView;
         }
     }
