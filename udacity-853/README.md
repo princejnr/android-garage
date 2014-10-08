@@ -125,6 +125,26 @@ Read: [Building Your Project With Gradle](http://developer.android.com/sdk/insta
 
 Explore different UI view elements and their attributes/behavior in the [Android Developer Documentation](http://developer.android.com/reference/android/view/package-summary.html).
 
+**Why AbsoluteLayout is Evil:** 
+Absolute layouts specify the exact position of each element in the view. 
+This prevents views from adapting to different device form factors (tablet, wearable, phone)
+
+**Responsive Design**
+Absolute layout is deprecated in favor of three common layouts (derived from ViewGroup)
+    * LinearLayout: Stack views horizontally or vertically (proportionately)
+    * FrameLayout: 1 child view
+    * RelativeLayout: Views position relative to parent, sibling or child
+
+**Scroll View**
+Contains a linear layout containing a vertical list of items.
+Challenge is to be resource-aware -- what is the minimum number of items you should create/display on the "visible" display area in order to be efficient and also smooth.
+    * Number of items in visible area = # fits on screen
+    * 1 extra item for above and below views = support scrolling
+    * "Recycled View" = as view drops off visible screen, it is reused to contain new data and placed at the end of list in direction of scroll
+
+
+
+
 
 L1: Connect Sunshine to the Cloud
 ---------------------------------
