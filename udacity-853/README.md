@@ -219,9 +219,11 @@ Use the AsyncTask class to simplify background threads creation and ui thread sy
 
     [Cloud Messaging](https://developer.android.com/google/gcm/index.html) lets you notify the SyncAdapter of changes on the _server_ side (push) so that the client only initiates a request to the server when it _knows_ there is new data to be fetched. (reactive)
 
+ 
 
-5. Menu Options. Add a 'menu' resource. Pay attention to 
+[Commit 2.5] Permissions
 
+5. Permissions.
 
 L3: New Activities and Intents
 ------------------------------
