@@ -1,4 +1,21 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
+- [Sunshine](#user-content-sunshine)
+    - [Android Studio Tips](#user-content-android-studio-tips)
+    - [L1: Create Project Sunshine](#user-content-l1-create-project-sunshine)
+        - [Create basic project](#user-content-create-basic-project)
+        - [Update project icon](#user-content-update-project-icon)
+        - [Android Software Stack](#user-content-android-software-stack)
+        - [Gradle](#user-content-gradle)
+        - [Create a User Interface](#user-content-create-a-user-interface)
+    - [L1: Connect Sunshine to the Cloud](#user-content-l1-connect-sunshine-to-the-cloud)
+    - [L3: New Activities and Intents](#user-content-l3-new-activities-and-intents)
+    - [L4a: Lifecycle and Databases](#user-content-l4a-lifecycle-and-databases)
+    - [L4b: Content Providers and Loaders](#user-content-l4b-content-providers-and-loaders)
+    - [L5: Rich and Responsive Layouts](#user-content-l5-rich-and-responsive-layouts)
+    - [L6: Services and Notifications](#user-content-l6-services-and-notifications)
+    - [Final Project: Individual](#user-content-final-project-individual)
+    
 Sunshine
 ========
 
