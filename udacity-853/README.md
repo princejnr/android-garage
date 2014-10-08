@@ -8,7 +8,7 @@
         - [Android Software Stack](#user-content-android-software-stack)
         - [Gradle](#user-content-gradle)
         - [Create a User Interface](#user-content-create-a-user-interface)
-    - [L1: Connect Sunshine to the Cloud](#user-content-l1-connect-sunshine-to-the-cloud)
+    - [L2: Connect Sunshine to the Cloud](#user-content-l2-connect-sunshine-to-the-cloud)
     - [L3: New Activities and Intents](#user-content-l3-new-activities-and-intents)
     - [L4a: Lifecycle and Databases](#user-content-l4a-lifecycle-and-databases)
     - [L4b: Content Providers and Loaders](#user-content-l4b-content-providers-and-loaders)
@@ -149,9 +149,35 @@ Given a list of data and instructions to build the View for each list item, the 
 [Commit 1.30] Bind Adapter to the ListView
 
 
-L1: Connect Sunshine to the Cloud
+L2: Connect Sunshine to the Cloud
 ---------------------------------
 
+1. Using the [OpenWeatherMap API](openweathermap.org/API). The URL for the requirements (1 week, JSON, postal code 94043, metric) is 
+```
+http://api.openweathermap.org/data/2.5/forecast/daily?
+    q=94043&units=metric&cnt=10&units=metric&mode=json
+```
+
+2. **Http Requests on Android** Now use this data in our app. Make an HTTP request, read response from input stream, clean up and log errors. Gist provides boilerplate.
+```
+http://gist.github.com/anonymous/1c04bf2423579e9d2dcd
+```
+
+3. **Log Messages on Android** See 'adb logcat' (commandline) or the DDMS tool (Android Studio 'Android Device Monitor' icon) and view the LogCat tab. 
+
+To create logs from your code, use the following commands in Java. Refer to the [Log API](http://developer.android.com/reference/android/util/Log.html) documents for more information on best practices for usage.
+
+``` 
+    // Syntax: Log.X(tag, message, throwable)
+    // where X can be 
+    //  d (debug), e (error), w (warning), i (info), v (verbose)
+    // e.g., 
+    Log.d("PlaceholderFragment", "Debug ", debugMsg);
+```
+
+Note that using an appropriate "TAG" (see [Log API](http://developer.android.com/reference/android/util/Log.html) will allow you to use filters to view your app's debug logs easier.
+
+[Commit 2.1] Logs & Http
 
 L3: New Activities and Intents
 ------------------------------
