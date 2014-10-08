@@ -189,6 +189,7 @@ Use the AsyncTask class to simplify background threads creation and ui thread sy
 2. Worker Threads. Can be created using new Thread (and new Runnable) to launch and manage the thread process manually. Or, you can subclass [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) and leverage it for less complex usage.
 
 3. AsyncTask. Has 4 key methods as shown below, of which only _doInBackground()_ is mandatory, and is where you define the functionality that you need to execute in the background.
+
 ```
     // before main action, runs on UI thread 
     void onPreExecute(Result result)
@@ -206,8 +207,20 @@ Use the AsyncTask class to simplify background threads creation and ui thread sy
     void onPostExecute(Result result)
 
 ```
+[Commit 2.4] Refresh Button; Data Sync & Menus.
 
-[Commit 2.4] 
+4. Data Sync. Let's look at some more background operations and options:
+
+    [Service](http://developer.android.com/guide/components/services.html). Note that if some device context causes the Activity to be reloaded (e.g., screen rotated) then the AsyncTask (which is created within an Activity) will also exit. If you have something that needs to run for longer time, and does not require UI (i.e., does not have Activity bound to it) then use a Service.
+
+    [InexactRepeatingAlarm](http://developer.android.com/reference/android/app/AlarmManager.html). Application component without UI, and less likely to be interrupted, may be scheduled using an InexactRepeatingAlarm. The key here is that the functionality should be 'scheduled'.
+
+    [SyncAdapter](http://developer.android.com/training/sync-adapters/creating-sync-adapter.html). This is designed to schedule background data syncs efficiently and is most useful for tasks that transfer data between a server and the device (client).
+
+    [Cloud Messaging](https://developer.android.com/google/gcm/index.html) lets you notify the SyncAdapter of changes on the _server_ side (push) so that the client only initiates a request to the server when it _knows_ there is new data to be fetched. (reactive)
+
+
+5. Menu Options. Add a 'menu' resource. Pay attention to 
 
 
 L3: New Activities and Intents
