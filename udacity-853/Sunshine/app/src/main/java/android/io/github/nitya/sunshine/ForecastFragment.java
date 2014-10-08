@@ -39,6 +39,8 @@ import java.util.Date;
  */
 public class ForecastFragment extends Fragment {
 
+    private ArrayAdapter<String> forecastAdapter;
+
     public ForecastFragment() {
     }
 
@@ -89,7 +91,7 @@ public class ForecastFragment extends Fragment {
                 new ArrayList<String>( Arrays.asList(forecastArray) );
 
         // Commit 1.29 Initialize ArrayAdapter
-        ArrayAdapter<String> forecastAdapter = new ArrayAdapter<String>(
+        forecastAdapter = new ArrayAdapter<String>(
                 getActivity(),                  // provide context
                 R.layout.list_item_forecast,    // identify layout = container
                 R.id.list_item_forecast_textview,// identify list item view = item
@@ -215,6 +217,16 @@ public class ForecastFragment extends Fragment {
             return null;
         }
 
+        @Override
+        // Once background fetch completes, then update the UI with new data
+        protected void onPostExecute(String[] result) {
+            if (result!=null){
+                forecastAdapter.clear();
+                for (String dayForecastStr: result){
+                    forecastAdapter.add(dayForecastStr);
+                }
+            }
+        }
 
         // Commit 2.7 -- Gists added here
         /* The date/time conversion code is going to be moved outside the asynctask later,
