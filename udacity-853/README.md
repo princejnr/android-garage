@@ -142,8 +142,10 @@ Challenge is to be resource-aware -- what is the minimum number of items you sho
     * 1 extra item for above and below views = support scrolling
     * "Recycled View" = as view drops off visible screen, it is reused to contain new data and placed at the end of list in direction of scroll
 
+**Adapters**
+Given a list of data and instructions to build the View for each list item, the Adapter is then responsible for dynamically creating and rendering the right number of list items onscreen to optimize for both resource usage and user experience.AdapterView can be used with ListView, GridView etc.
 
-
+[Commit 1.29] Initialize Adapter
 
 
 L1: Connect Sunshine to the Cloud

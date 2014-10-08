@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -73,6 +74,14 @@ public class MainActivity extends Activity {
             // Commit 1.28 And return it as an array list
             List<String> thisWeeksForecast =
                     new ArrayList<String>( Arrays.asList(forecastArray) );
+
+            // Commit 1.29 Initialize ArrayAdapter
+            ArrayAdapter<String> forecastAdapter = new ArrayAdapter<String>(
+                    getActivity(),                  // provide context
+                    R.layout.list_item_forecast,    // identify layout = container
+                    R.id.list_item_forecast_textview,// identify list item view = item
+                    thisWeeksForecast               // identify data to fill in
+            );
 
             return rootView;
         }
